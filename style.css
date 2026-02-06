@@ -237,6 +237,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s;
+    transform: rotate(-90deg);
 }
 
 .album-item:hover {
@@ -626,4 +627,5 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+
 }

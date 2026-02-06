@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Seninle Her An - 14 Şubat Özel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Kar Tanesi Animasyonu -->
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+
+    <!-- Müzik Çalar -->
+    <div class="music-player">
+        <audio id="backgroundMusic" loop>
+            <source src="muzik.mp3" type="audio/mpeg">
+        </audio>
+        <button class="music-btn" onclick="toggleMusic()">
+            <i class="fas fa-music"></i> <span>Müziği Başlat</span>
+        </button>
+    </div>
+
+    <!-- Navigasyon -->
+    <nav class="navbar">
+        <div class="nav-logo">❤️ Seninle Her An</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+            <li><a href="#album" class="nav-link">Fotoğraf Albümü</a></li>
+            <li><a href="#poems" class="nav-link">Şiirler</a></li>
+            <li><a href="#letter" class="nav-link">Sevgiliye Mektup</a></li>
+            <li><a href="#balloons" class="nav-link">Balon Patlatma</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Ana Sayfa -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1 class="hero-title">❤️ Seninle Her An Özel</h1>
+            <p class="hero-subtitle">14 Şubat Sevgililer Günü'nde seninle olan her anı biriktirdim...</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('#album')">Fotoğraflara Git</button>
+                <button class="btn-secondary" onclick="scrollToSection('#poems')">Şiirlere Göz At</button>
+            </div>
+            <div class="love-counter">
+                <i class="fas fa-heart"></i>
+                <span id="loveCount">0</span>
+                <span>kez "Seni Seviyorum" dedik,diyeceğiz...</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fotoğraf Albümü (İlk 6 fotoğraf) -->
+    <section id="album" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-images"></i> Fotoğraf Albümüm</h2>
+            <p>Bizim en güzel anılarımız</p>
+        </div>
+        <div class="album-grid">
+            <div class="album-item" onclick="openModal('1.jpg')">
+    <!-- Satır 68 -->
+    <img src="1.jpg" alt="Anı 1">
+    <!-- Diğer kodlar... -->
+</div>
+
+<!-- Satır 75 -->
+<div class="album-item" onclick="openModal('2.jpg')">
+    <!-- Satır 76 -->
+    <img src="2.jpg" alt="Anı 2">
+    <!-- Diğer kodlar... -->
+</div>
+
+<!-- Satır 83 -->
+<div class="album-item" onclick="openModal('3.jpg')">
+    <!-- Satır 84 -->
+    <img src="3.jpg" alt="Anı 3">
+    <!-- Diğer kodlar... -->
+</div>
+
+<!-- Satır 91 -->
+<div class="album-item" onclick="openModal('4.jpg')">
+    <!-- Satır 92 -->
+    <img src="4.jpg" alt="Anı 4">
+    <!-- Diğer kodlar... -->
+</div>
+
+<!-- Satır 99 -->
+<div class="album-item" onclick="openModal('5.jpg')">
+    <!-- Satır 100 -->
+    <img src="5.jpg" alt="Anı 5">
+    <!-- Diğer kodlar... -->
+</div>
+
+<!-- Satır 107 -->
+<div class="album-item" onclick="openModal('6.jpg')">
+    <!-- Satır 108 -->
+    <img src="6.jpg" alt="Anı 6">
+    <!-- Diğer kodlar... -->
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Şiirler -->
+    <section id="poems" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-feather-alt"></i> Şiirlerim</h2>
+            <p>Sana yazdığım duygular</p>
+        </div>
+        <div class="poems-container">
+            <div class="poem-card">
+                <div class="poem-header">
+                    <h3>Seninle Yaşamak</h3>
+                    <span class="poem-date">14 Şubat 2026</span>
+                </div>
+                <div class="poem-content">
+                    <p>
+                        Tebessümünle aydınlanır içimin kuytu köşeleri,<br>
+                        Ellerinde saklı sanki baharın en güzel müjdeleri.<br><br>
+                        
+                        Sevgin bir emanet gibi titrek ellerimde durur,<br>
+                        Limanına sığınan gönlüm sende huzuru bulur.<br><br>
+                        
+                        İçimde bitmek bilmeyen bir ateştir aşkın,<br>
+                        Müptelasıyım seninle geçen her güzel anın.<br><br>
+                        
+                        Ebedi bir mühür gibi kalbimde kazılı adın.
+                    </p>
+                </div>
+                <button class="btn-like" onclick="likePoem(this)">
+                    <i class="far fa-heart"></i> <span>Beğen</span>
+                </button>
+            </div>
+            <div class="poem-card">
+                <div class="poem-header">
+                    <h3>Hasret Ateşi</h3>
+                    <span class="poem-date">14 Şubat 2026</span>
+                </div>
+                <div class="poem-content">
+                    <p>
+                        Yollar sanki bir uçurum,<br>
+                        Hasretinden yorgunum.<br><br>
+                        
+                        Ruhum sende mahpus kaldı,<br>
+                        Ben bu derde vurgunum.<br><br>
+                        
+                        Gözlerimde nemli bir iz,<br>
+                        Kaldık sanki biz çaresiz.<br><br>
+                        
+                        Gel ki bu yangın dursa da,<br>
+                        Ölüyorum sensiz, sessiz.
+                    </p>
+                </div>
+                <button class="btn-like" onclick="likePoem(this)">
+                    <i class="far fa-heart"></i> <span>Beğen</span>
+                </button>
+            </div>
+            <div class="poem-card">
+                <div class="poem-header">
+                    <h3>Her Gün Sevgililer Günü</h3>
+                    <span class="poem-date">14 Şubat 2026</span>
+                </div>
+                <div class="poem-content">
+                    <p>
+                        14 Şubat değil,<br>
+                        Her gün seninle özel.<br><br>
+                        
+                        Sevginle dolu hayatım,<br>
+                        Seninle mutluluk buldum.
+                    </p>
+                </div>
+                <button class="btn-like" onclick="likePoem(this)">
+                    <i class="far fa-heart"></i> <span>Beğen</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sevgiliye Mektup -->
+    <section id="letter" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-envelope"></i> Sevgiliye Mektup</h2>
+            <p>Sana yazdığım özel mektup</p>
+        </div>
+        <div class="letter-container">
+            <div class="letter-card">
+                <div class="letter-header">
+                    <i class="fas fa-heart"></i>
+                    <h3>En Sevgili Aşkım,</h3>
+                </div>
+                <div class="letter-content">
+                    <p>
+                        Hayatın tüm gürültüsü içinde, ruhumun sığındığı en huzurlu liman sensin. Gözlerine her
+						baktığımda, orada sadece kendimi değil, ömrümün en güzel halini görüyorum. Seni sevmek,
+						karanlık bir odada aniden bir mum yakmak gibi; içimdeki tüm kuytu köşeler senin varlığınla
+						aydınlanıyor, anlam kazanıyor. Kalbim, senin adınla atan ve senin nezaketinle terbiye olan bir
+						emanet artık.
+                    </p>
+                    <p>
+                        Biliyorum, bazen yollar ve mesafeler aramıza sessiz bir duvar örmeye kalkıyor. Ancak ne kadar
+						uzak olursak olalım, senin sevgin bir emanet gibi titrek ellerimde, en derin sızımda duruyor.
+						Sesini duyduğum an, o amansız hasret bir nebze de olsa yerini vuslat umuduna bırakıyor. Sen benim
+						sadece bugünüm değil, her nefeste biraz daha bağlandığım en kıymetli gerçeğimsin.
+                    </p>
+                    <p>
+                        Bundan sonrası için tek dileğim; her sabah senin hayalinle uyanmak değil, bizzat senin varlığınla
+						güne başlamak. Adının geçtiği her cümle benim için bir dua, seninle geçen her an ise paha biçilemez
+						bir hazine. Ömrümün geri kalanını seninle aynı gökyüzü altında, el ele ve gönül gönüle tüketmek; seninle
+						yaşlanmak değil, seninle her gün yeniden doğmak istiyorum.
+                    </p>
+                    <p>
+                        Seni seviyorum aşkım. Bu sevgi sonsuza dek sürecek. 
+                        Seninle her gün Sevgililer Günü gibi. 14 Şubat 
+                        kutlu olsun sevgilim!
+                    </p>
+                    <p style="text-align: right; margin-top: 30px; font-style: italic;">
+                        Seni sonsuza dek seven,<br>
+                        Biricik Sevgilin Cihan
+                    </p>
+                </div>
+                <div class="letter-footer">
+                    <span><i class="far fa-calendar"></i> 14 Şubat 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Balon Patlatma Oyunu (Kalan 22 fotoğraf) -->
+    <section id="balloons" class="section">
+        <div class="section-header">
+            <h2><i class="fas fa-balloons"></i> Balon Patlatma Oyunu</h2>
+            <p>Balonları patlat ve gizli fotoğrafları keşfet!</p>
+        </div>
+        <div class="balloons-container" id="balloonsContainer">
+            <!-- Balonlar JavaScript ile otomatik oluşturulacak -->
+        </div>
+        <div class="balloon-info">
+            <p><i class="fas fa-info-circle"></i> Balonları tıklayarak patlat ve fotoğrafları gör!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>❤️ Seninle Her An</h3>
+                <p>14 Şubat Sevgililer Günü Özel Sitesi</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Linkler</h4>
+                <a href="#home">Ana Sayfa</a>
+                <a href="#album">Albüm</a>
+                <a href="#poems">Şiirler</a>
+                <a href="#letter">Mektup</a>
+                <a href="#balloons">Balonlar</a>
+            </div>
+            <div class="footer-section">
+                <h4>Özel Mesaj</h4>
+                <p>"Seni seviyorum aşkım! Her gün seninle olmak benim için bir nimet."</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 - Seninle Her An ❤️ | Tüm hakları saklıdır</p>
+        </div>
+    </footer>
+
+    <!-- Modal (Fotoğraf Önizleme) -->
+    <div class="modal" id="imageModal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Fotoğraf">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
